@@ -1,0 +1,17 @@
+---
+title: "Lab Five"
+author: "Thomas Scartz"
+---
+
+```{r setup, include = FALSE}
+library(tidyverse)
+```
+
+Here is the boxplot's code
+
+```{r plot}
+mpg %>% 
+  ggplot() +
+  geom_boxplot(aes(trans, cty), fill = "red")
+```
+
